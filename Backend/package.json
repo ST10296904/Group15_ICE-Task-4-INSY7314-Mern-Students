@@ -1,0 +1,27 @@
+{
+  "name": "secure-mern-backend",
+  "version": "1.0.0",
+  "description": "Secure HTTPS Express backend for MERN application",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "generate-certs": "openssl req -x509 -newkey rsa:4096 -keyout ssl/server.key -out ssl/server.cert -days 365 -nodes -subj '/C=US/ST=State/L=City/O=Organization/CN=localhost'"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  },
+  "keywords": [
+    "express",
+    "https",
+    "ssl",
+    "mern",
+    "secure"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
+}
