@@ -7,10 +7,10 @@ const path = require('path');
 const app = express();
 const PORT = 3001;
 
-// Middleware
+
 app.use(express.json());
 
-// Allow both http and https frontend during development
+
 app.use(cors({
   origin: ['http://localhost:3000', 'https://localhost:3000'],
   credentials: true
